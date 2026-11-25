@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>IT Infastructure Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NETWORK OPERATIONS CENTER</h1>
+        <p> IT Infastructure Monitoring System.</p>
+    </header>    
+
+    <div class="clock-panel">
+        <h3>♡ System Time</h3>
+        <div class="clock-display">
+            <span>🕒</span>
+            <span id="clock">00:00:00</span>
+        </div>    
+        <p id="date"></p>
+    </div>        
+
+        <h2>System Overview</h2>
+
+        <div class="dashboard">
+
+            <div class="panel">
+                <h3>Server Status</h3>
+                <p>All servers operational</p>
+            </div>    
+
+        <div class="panel">
+            <h3>Network Status</h3>
+            <p>Monitoring network connectivity</p>
+        </div>
+
+        <div class="panel">
+            <h3>System Monitoring</h3>
+            <p>System monitoring active</p>
+        </div>
+
+        <div class="panel">
+            <h3>System Uptime</h3>
+            <p>24 Hours</p>
+        </div>
+
+        <div class="panel">
+            <h3>Connected Devices</h3>
+            <p>12 Devices</p>
+        </div>    
+        
+        <div class="panel">
+            <h3>Last System Check</h3>
+            <p>System Check Completed</p>
+        </div>
+        
+      </div>
+    
+    <script>
+    function updateClock() {
+       const now = new Date();
+
+       document.getElementById("clock").tectContent = 
+          now.toLocaleTimeString("en-US");
+
+       document.getElementById("date").textContext = 
+          now.toDateString();   
+    }
+    
+    updateClock();
+    setInterval(updateClock, 1000);
+    </script>  
+    </body> 
+    </html>

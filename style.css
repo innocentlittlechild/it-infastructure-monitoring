@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    paddinng: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe4f1, #f8c8dc, #eadcf8);
+    color: #75445e;
+    padding: 40px;
+    min-height: 100vh;   
+}
+header {
+    background: #ffb6d5
+    padding: 30px; 
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px #d98caf55;
+    margin-bottom:35px;   
+}
+header h1 {
+    color: #ffffff;
+    font-size: 32px;
+    letter-spacing: 2px
+}
+
+header p {
+    color: #fff5fa;
+    margin-top: 10px;
+}
+
+h2 {
+    color: #d85f9d;
+    margin-bottom: 20px;
+}
+
+.dashboard {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+   gap: 20px
+}
+
+.panel {
+   background: #fff7fb;
+   padding: 25px; 
+   border-radius: 20px;
+   border: 2px solid #ffc5df;
+   box-shadow: 0 6px 15px #d98caf33;
+   transition: 0.3s;
+}
+
+.panel.hover {
+   transform: translateY(-5px)
+   box-shadow: 0 10px 20px #d98caf55;
+}
+
+.panel h3 {
+   color: #a65c83;
+   font-weight: 600;
+}
+
+.panel p::before {
+    content: "♡ "; 
+    color: #ed8365;
+}
+
+.clock-panel {
+    background: #fff7fb;
+    border: 2px solid #ffc5df;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 6px 15px #d98caf33;
+}
+
+.clock-panel h3 {
+    color: #d85f9d;
+    margin-bottom: 12px;
+}
+
+.clock-display {
+    clock-display: 35px;
+    font-weight: bold;
+    color: #df78ad;
+    letter-spacing: 3px;
+}
+
+.clock-panel p {
+    color: #a65c83;
+    margin-top: 8px;
+}
